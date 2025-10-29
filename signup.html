@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Signup - Zena</title>
+    <link rel="stylesheet" href="stylesignup.css">
+    <script src="signup.js"></script>
+    <script src="server.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo">
+                </div>
+            </div>
+            <div class="zena-name">
+                Your Virtual Assitant
+            </div>
+            <div class="home-text border" onclick="location.href='home.html'">
+                Home
+            </div>
+        </div>
+    </header>
+    <section class="login-form-section">
+        <h1>
+            Create Your Account
+        </h1>
+        <p class="login-heading">
+            Join ZENA to experience gesture control..</p>
+
+
+        <div class="form">
+            <div class="form-content">
+                <form id="signupForm" action="http://localhost:3000/signup" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+
+
+                    <!-- <div class="Signup-btn" onclick="document.getElementById('signupForm').submit();">
+                        Signup
+                    </div> -->
+                    <button type="submit" class="Signup-btn">Signup</button>
+
+                </form>
+
+            </div>
+
+    </section>
+
+
+</body>
+
+</html>

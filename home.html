@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Zena - Your Virtual Assistant</title>
+    <link rel="stylesheet" href="stylehome.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo">
+                </div>
+            </div>
+            <div class="zena-name">
+                Your Virtual Assitant
+            </div>
+            <div class="nav-home border">
+                <p class="home-text">Home</p>
+            </div>
+            <div class="login-text border" onclick="location.href='login.html'">
+                Login
+            </div>
+            <div class="aboutus-text border" onclick="location.href='about.html'">
+                About Us
+            </div>
+            <div class="nav-contactus border">
+                <p class="contactus-text">Contact Us</p>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <div class="hero-msg glow">
+            <p class="heading">Experience Touchless Interaction!</p>
+            <p class="sub-heading">Control your computer using hand gestures with ZENA</p>
+        </div>
+
+    </div>
+    <div id="tryZenaBtn" class="try-zena-button hidden" onclick="location.href='index.html'">
+        Try Zena
+    </div>
+
+    <section class="features-section">
+
+        <div class="feature1box box">
+            <div class="feature1content">
+                <h2>
+                    ✋Gesture Control
+                </h2>
+                <p class=" featurepara1 ">Navigate and interact using interactive gestures</p>
+            </div>
+        </div>
+        <div class="feature2box box">
+            <div class="feature2content">
+                <h2>
+                    📍 Touchless Navigation
+                </h2>
+                <p class="featurepara2">Scroll, zoom, and open websites without touching your mouse or keyboard.</p>
+            </div>
+
+        </div>
+        <div class="feature3box box">
+            <div class="feature3content">
+                <h2>
+                    🔊Voice Feedback System
+                </h2>
+                <p class="featurepara3"> ZENA speaks your actions for an engaging and accessible experience.</p>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="demo-video">
+        <p class="demo-content">Watch Zena In Action!</p>
+
+    </div>
+    <div class="video">
+        <video controls width="500">
+            <source src="Screen Recording 2025-10-06 122510.mp4">
+        </video>
+    </div>
+    <footer>
+        <div class="horizontal-line"></div>
+        <p class="footer-text">2025 - ZENA - Gesture AI Assistant</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const isLoggedIn = localStorage.getItem("isLoggedIn");
+            console.log("isLoggedIn =", isLoggedIn);
+
+            const tryZenaBtn = document.getElementById("tryZenaBtn");
+
+            // Always hide first
+            tryZenaBtn.classList.add("hidden");
+
+            // Show only if user is logged in
+            if (isLoggedIn === "true") {
+                tryZenaBtn.classList.remove("hidden");
+                console.log("User logged in — showing Try Zena button");
+            } else {
+                console.log("User not logged in — hiding Try Zena button");
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    transition: all 0.7s ease;
+    background-color: white;
+
+}
+
+.navbar {
+    background-color: rgba(10, 25, 47, 0.95);
+    height: 60px;
+    color: #00d4ff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+    text-shadow: 0 0 15px #00d4ff;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+.logo {
+    background-image: url("zena logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.zena-name {
+    margin-left: 30px;
+}
+
+.home-text {
+    margin-left: 900px;
+}
+
+section {
+    width: 600px;
+    height: 300px;
+
+    margin-left: 400px;
+
+}
+
+p {
+
+    font-size: 20px;
+    margin-top: 200px;
+}
