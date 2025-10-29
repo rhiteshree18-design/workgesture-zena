@@ -89,10 +89,11 @@ app.post('/login', (req, res) => {
 
 // ✅ Default route: serve index.html when visiting root
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'home.html'));
 });
 
 // ✅ Start server
 app.listen(port, () => {
   console.log(`🚀 Server running at http://localhost:${port}`);
 });
+
